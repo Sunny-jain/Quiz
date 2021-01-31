@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Module</title>
+</head>
+<body class="bg-muted">
+    <div class="row text-center bg-dark">
+        <h1 id="score" class="col text-light display-4 font-weight-bold">Quiz</h1>
+    </div>
+    <div class="container-fluid bg-muted">
+        <div class="row">
+            <div class="container mt">
+                <h2 id="startqz" hidden="true">Answer Key</h2>
+                <br>
+                <div class="card" id="card1" >
+                    <div class="card-body">
+                        <h2 id="ques"></h2>
+                        <form class="form-group">
+                            <div class="form-check" id="r0"></div>
+                            <div class="form-check" id="r1"></div>
+                            <div class="form-check" id="r2"></div>
+                            <div class="form-check" id="r3"></div>
+                        </form>
+                        <div class="alert alert-danger text-center col-3" hidden="true" id="incorrect"><strong>Incorrect</strong></div>
+                        <div class="alert alert-success text-center col-3" id="correct" hidden="true"><strong>Correct</strong></div>
+                        <button class="btn btn-warning" type="button" id="submit">Submit</button>
+                        <button class="btn btn-success" type="button" hidden="true" id="next">Next</button>
+                    </div>
+                </div>
+                <div class="card" id="card2" hidden="true">
+                    <div class="card-body">
+                        <ul id="list">
+
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary" type="button" id="restart" hidden="true">Restart</button>
+           </div>
+          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
